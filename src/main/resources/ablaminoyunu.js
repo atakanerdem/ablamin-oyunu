@@ -5,24 +5,31 @@ function createMatrix() {
 	var matrix = createMatrix();	
 
 function createTable(){
-
-	let div = document.getElementById("div");
-	for(i=0;i<matrix.length;i++){
-		let tr = document.createElement("span");
-		for(j=0;j<matrix.length;j++){
-			let td = document.createElement("td");
-			td.textContent = matrix[i][j];
-			td.addEventListener("click", function() {
-				matrix[i][j]++;
-				td.textContent++;
-			})
-			tr.appendChild(td);
+	let body = document.getElementById("body");
+	for(var i=0;i<matrix.length;i++){
+		let div = document.createElement("div");
+		for(var j=0;j<matrix.length;j++){
+			let button = document.createElement("button");
+			button.textContent = matrix[i][j];
+			button.value = i.toString() + j.toString();
+			button.addEventListener("click", () => incrementValue(button));
+			div.appendChild(button);
 		}
-		table.appendChild(tr);
+		body.appendChild(div);
 	}
 }
 
+function incrementValue(button){
+	let x = button.value[0];
+	let y = button.value[1];
 
+	matrix[x][y]++;
+	
+	button.textContent = matrix[x][y];
+
+console.log(matrix[x][y]);	
+				
+				}
 
 
 let myArray = createTable();

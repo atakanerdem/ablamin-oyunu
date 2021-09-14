@@ -1,4 +1,6 @@
-bir hücreye tıklanıldığında 2 birim sağ sol yukarı aşağı ve 1 birim çapraz değerlerden maksimumunu alıp 1 artıracağız.
+bir hücreye tıklanıldığında 3 birim sağ sol yukarı aşağı ve 2 birim çapraz değerlerden maksimumunu alıp 1 artıracağız.
 bir hücreye yalnızca bir değer atanabilir.
+
+kullanıcı tıklanılmış bir hücrenin ancak 3 birim sağına soluna üstüne altına veya 2 birim çaprazına tıklayabilir.
 
 ilk kural uygulanamıyorsa oyun biter.

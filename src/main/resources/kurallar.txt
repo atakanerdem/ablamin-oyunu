@@ -1,0 +1,4 @@
+bir hücreye tıklanıldığında 2 birim sağ sol yukarı aşağı ve 1 birim çapraz değerlerden maksimumunu alıp 1 artıracağız.
+bir hücreye yalnızca bir değer atanabilir.
+
+ilk kural uygulanamıyorsa oyun biter.
